@@ -1,8 +1,14 @@
 import type { NextPage } from "next";
-import styles from "../styles/Home.module.scss";
+import SidebBar from "../components/SideBar";
 
 const Home: NextPage = () => {
-  return <div className={styles.container}>hello</div>;
+  return (
+    <>
+      <main>
+        <SidebBar />
+      </main>
+    </>
+  );
 };
 
 export default Home;
