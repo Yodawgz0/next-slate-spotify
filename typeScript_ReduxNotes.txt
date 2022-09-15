@@ -1,0 +1,79 @@
+never : for typescript function that will never return something, can be always running or throw some error (doesn't have time to return). 
+void : for Typescript function that will return nothing. any : for Typescript function where you are not sure of it returns.
+interface person {
+    name: string,
+    age?: number
+}
+
+interface guy extends person{
+    profession: string
+}
+
+let hey: guy = {
+    name: "uju",
+    profession: "IT"
+}
+
+React.FC -> type of functional component & React.ReactNode supports all  of the typesd (const App: React.FC = () => {})
+
+
+=====================================================
+
+Thunks are used to cintro the Aysnc ops in workflow
+They return a function in which you can do an API call
+also they have middleware which can be used to keep check of any side effects the function might have
+
+
+we use ClassName in React because class is reserved word in Javascript so we will be creating else but not style with classname
+babel is converts sooo
+=====================================================
+
+google thing core web vitals
+tHEY ARE used in ranking factors for the website the better the score 
+
+Total Blocking Time (TBT) is a non-Core Web Vital that measures the total time in milliseconds between First Contentful Paint (FCP) and 
+While TBT can be gathered in the field, it’s easily influenced by user interaction and doesn’t make for a reliable metric to measure how long it takes for a page to become responsive to user input. 
+Therefore, TBT is only used in lab data.Time To Interactive (TTI) where the main thread is blocked long enough to make it unresponsive to user input.
+
+
+Speed Index (SI)
+Speed Index (SI) is a non-Core Web Vital that measures how quickly the contents of a page are visibly populated during page load. 
+It’s calculated using frame-by-frame analysis of your page’s load behavior, 
+counting the visual progression between frames captured every 100ms.
+
+
+loading of the website: LCP : largest contentful paint
+performance 2.5 seconds to get that good rating
+so here how uch time does it take the content to load the more the content , lower the score so use optimized images
+
+
+FID  : First Input Delay : 100ms interactivity
+time it takes from first user input to the response form the website ,
+the use can see and click but the functonality isnt loaded 
+real live interaction is required in order to measure this , gathers over time 
+-> heavy JS , element is heavily relaint on JS and it isnt loaded , break it up to chunks 
+
+
+CLS : cummulative layout shift: how stable your UI is compnonents jump as page is loading
+all the layout shift that happens while scrolling and loading link appears to move or an element move over the lifespan of the website 
+_> height and width is not defined , like reserve the space for the image please, some kinda placeholder 
+_> animations and not induce any elements above the existing content and like make it appear as expected 
+
+they comapre all the pages that there are and 75% ke uppar hona chaiye-> good rating
+changes overtime 
+
+=====================================================
+
+SSR ->
+1. SEO matters 
+2. Takes a lot of server rendering
+3. if interet is slow it will cause some issues 
+4. it is generally for static contents like a blog site, fast inital loading 
+5. prepared so browser is not dependednt
+
+CSR -> 
+1. where lot of user interaction is required 
+2. SEO is not that important
+
+Since most of the nowadays frameworks do allow this then we can use the combo
+
